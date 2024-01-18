@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sushi/components/button.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({Key? key}) : super(key: key);
@@ -12,11 +13,12 @@ class IntroPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(25.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //shop name
               Text(
-                "SUSHI MAN!",
+                "SUSHI MAN",
                 style: GoogleFonts.dmSerifDisplay(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
@@ -46,14 +48,23 @@ class IntroPage extends StatelessWidget {
 
               //shop description
               Text(
-                "Feel the taste of the most popular Japanese food anywhere and anytime",
+                "Feel the taste of the most popular Japanese food and sushi, anywhere and anytime",
                 style: TextStyle(
                   fontSize: 14,
-                  color: Colors.grey[200],
+                  color: Colors.grey[300],
                   height: 2,
                 ),
               ),
+
+              const SizedBox(height: 10),
               //call to action
+              MyButton(
+                text: "Get Started",
+                onTap: () {
+                  //go to menu page
+                  Navigator.pushNamed(context, '/menupage');
+                },
+              ),
             ],
           ),
         ),
