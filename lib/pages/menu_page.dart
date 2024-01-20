@@ -87,7 +87,7 @@ class _MenuPageState extends State<MenuPage> {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide(color: Colors.white),
+                  borderSide: BorderSide(color: Colors.greenAccent),
                 ),
               ),
             ),
