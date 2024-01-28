@@ -12,6 +12,7 @@ class FoodTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
@@ -32,15 +33,19 @@ class FoodTile extends StatelessWidget {
           SizedBox(
             width: 160,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 //price
                 Text(
                   '\$' + food.price.toString(),
                 ),
                 //rating
-                Icon(Icons.star),
-                Text('Score' + food.rating),
-                Text(food.isAvailable ? 'Available' : 'Not Available')
+                Icon(
+                  Icons.star,
+                  color: Colors.yellow[700],
+                ),
+                Text('Score ' + food.rating),
+                //Text(food.isAvailable ? 'Available' : 'Not Available')
               ],
             ),
           )
