@@ -45,7 +45,7 @@ class FoodTile extends StatelessWidget {
                   color: Colors.yellow[700],
                 ),
                 Text('Score ' + food.rating),
-                //Text(food.isAvailable ? 'Available' : 'Not Available')
+                Text(food.isAvailable ? 'Available' : 'Not Available')
               ],
             ),
           )
