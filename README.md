@@ -1,6 +1,6 @@
-# sushi
+# sushi app
 
-A new Flutter project.
+A Sushi App Flutter project for ordering meals anywhere anytime.
 
 ## Getting Started
 
